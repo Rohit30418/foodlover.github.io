@@ -210,23 +210,22 @@ main{
 
     .foodquality{
         position: relative;
-        padding: 50px 0px;
+        padding: 30px 0px;
         background-image: url("img/svg.png");
         background-position: center;
         background-size: cover;
-        height: 800px;
+        height: 500px;
        
         .part1{
             display: flex;
-        justify-content: space-between; 
+        justify-content: center; 
+        align-items: center;
         
         div{
-            display: flex;
-            align-self: flex-end;
             flex-direction:column;
             padding: 0px 100px;
             position: absolute;
-            max-width: 500px;
+            max-width: 400px;
             top:20%;
             z-index: 1;
             background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
@@ -252,52 +251,19 @@ main{
         }
        }
 
-       .part2{
-           position: absolute;
-           bottom: 0px;
-           width: 100%;
-
-        .img2{
-            width: 100%;
-            max-width: 300px;
-            bottom: 0px;
-            left: -100px;
-            position: absolute;
-        }
-
-        .img3{
-            width: 100%;
-            position: absolute;
-            max-width: 400px;
-            right: 50px;
-            bottom: 80px;
-        }
-       }
+    
 
         .img1{
             width: 100%;
-            max-width: 300px;
+            max-width: 500px;
+            min-width: 300px;
             position: absolute;
-            right: -100px;
-            top:0px
+            top:0px;
+            animation: rotateani 5s linear infinite forwards ;
         }
 
-        .img2{
-            width: 100%;
-            max-width: 380px;
-            transform: translate(-10%,20%);
-        }
 
-        .img3{
-            width: 100%;
-           max-width: 400px;
-           transform: translate(-30%,-30%);
-     
-        }
-    .part2{
-        display: flex;
-        justify-content: space-between;
-    }
+ 
     }
 
 
@@ -642,6 +608,12 @@ footer{
 @media(max-width:578px){
     html{
         font-size: 50%;
+    }
+
+    main{
+        .foodquality{
+            height: 400px;
+        }
     }
 }
 
